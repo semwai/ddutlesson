@@ -30,18 +30,54 @@
 </head>
 
 <body class="bg-dark">
-    <div class="container alert">
+    <div class="container-fluid alert">
+        
+
         <div class="row">
-            <div class="col-6">
-                <h2>PHP example</h2>
+            <div class="col-12"><h1>Тема</h1></div>
+             <div class="col-lg-5 col-sm-12">
+                 <h2>PHP</h2>
+                 <pre class="bg-white prettyprint lang-php linenums">
+ echo "hello"</pre>
+             </div>
+             <div class="col-lg-3 col-sm-12">
+                 <h2>HTML</h2>
+ <pre class="bg-white prettyprint lang-html">
+ hello</pre>
+             </div>
+             <div class="col-lg-4 col-sm-12">
+                 <h2>Как выглядит</h2>
+ hello
+             </div>
+         </div>
+
+
+        
+        <div class="row">
+           <div class="col-12"><h1>Вывод массива на страницу</h1></div>
+            <div class="col-lg-5 col-sm-12">
+                <h2>PHP</h2>
                 <pre class="bg-white prettyprint lang-php linenums">
 $cars = array("Volvo", "BMW", "Toyota");
+/*Длину массива лучше посчитать 1 раз, а не делать 
+for($i = 0; $i < count($cars); $i++)
+т.к. в данном случае мы будем пересчитывать длину в каждом шаге цикла
+*/
 $arrlength = count($cars);
 
-for($x = 0; $x < $arrlength; $x++) {
-  echo $cars[$x];
+for($i = 0; $i < $arrlength; $i++) {
+  echo $cars[$i];
   echo "&lt;br&gt;";
 }</pre>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <h2>HTML</h2>
+<pre class="bg-white prettyprint lang-html">
+Volvo&lt;br&gt;BMW&lt;br&gt;Toyota&lt;br&gt;</pre>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <h2>Как выглядит</h2>
+Volvo<br>BMW<br>Toyota<br> 
             </div>
         </div>
     </div>
